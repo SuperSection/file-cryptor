@@ -8,6 +8,15 @@
       "program": "${workspaceFolder}/encrypt_decrypt", // Path to the compiled binary
       "args": [], // Arguments to pass to your program
       "cwd": "${workspaceFolder}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
       "preLaunchTask": "build",
     },
     {
@@ -17,6 +26,15 @@
       "program": "${workspaceFolder}/cryption", // Path to the compiled binary
       "args": ["your_task_data_here"], // Arguments to pass to your program
       "cwd": "${workspaceFolder}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
       "preLaunchTask": "build",
     }
   ]
