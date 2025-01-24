@@ -16,19 +16,25 @@ git clone https://github.com/SuperSection/file-cryptor
 cd file-cryptor
 ```
 
-### 2. Build the Executables
+### 2. Define .env file in the working directory
+Provide any arbitrary number of your choice, to use it as a secret for encryption & decryption
+```bash
+echo "1234567" > .env
+```
+
+### 3. Build the Executables
 Use the make command to build the required binaries:
 ```bash
 make all
 ```
 
-### 3. Run the Application
+### 4. Run the Application
 To encrypt or decrypt files in a folder, run:
 ```bash
 ./encrypt_decrypt
 ```
 
-### 4. Clean the Build
+### 5. Clean the Build
 To remove all compiled files and executables:
 ```bash
 make clean
